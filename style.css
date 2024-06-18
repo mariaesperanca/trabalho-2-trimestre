@@ -1,0 +1,33 @@
+.square {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: move-square 12s ease-in-out infinite alternate;
+  }
+  
+  @keyframes move-square {
+    0%, 100% {
+      background-color: blue;
+      top: 0;
+      left: 0;
+    }
+    25% {
+      background-color: red;
+      top: 0;
+      left: calc(100% - 100px);
+    }
+    50% {
+      background-color: green;
+      top: calc(100% - 100px);
+      left: calc(100% - 100px);
+    }
+    75% {
+      background-color: yellow;
+      top: calc(100% - 100px);
+      left: 0;
+    }
+  }
+  
